@@ -14,14 +14,9 @@
  */
 
 /**
- * Lazy initialize dependency container.
- */
-DependencyInjection\ContainerInitializer::lazyInit();
-
-/**
  * Backend modules
  */
-$GLOBALS['BE_MOD']['developers']['services'] = array(
-	'callback' => 'DependencyInjection\ServicesBackend',
-	'icon'     => 'system/modules/dependency-container/assets/images/services.png',
+$GLOBALS['BE_MOD']['devtools']['services'] = array(
+	'callback' => 'DependencyInjection\Inspector\InspectorBackend',
+	'icon'     => 'system/modules/dependency-container-inspector/assets/images/services.png',
 );

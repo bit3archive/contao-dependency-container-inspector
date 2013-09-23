@@ -13,9 +13,9 @@
  * @filesource
  */
 
-$GLOBALS['TL_LANG']['MOD']['developers']           = 'Entwickler';
-$GLOBALS['TL_LANG']['MOD']['dependency-container'] = 'Dependency Injection Container';
-$GLOBALS['TL_LANG']['MOD']['services']             = array(
+$GLOBALS['TL_LANG']['MOD']['devtools']                     = 'Entwickler-Tools';
+$GLOBALS['TL_LANG']['MOD']['dependency-container-inspector'] = 'Dependency Injection Container Inspektor';
+$GLOBALS['TL_LANG']['MOD']['services']                       = array(
 	'Services Inspektor',
 	'Übersicht über registrierte Services im DI Container.'
 );

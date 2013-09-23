@@ -1,31 +1,4 @@
-Dependency Injection Container for Contao Open Source CMS
+Dependency injection container inspector for Contao Open Source CMS
 ===============================================
 
-This DI Container based on [Pimple](http://pimple.sensiolabs.org).
-
-Register parameters and services
---------------------------------
-
-system/modules/X/config/services.php
-```php
-$container['myservice.param'] = 'value';
-$container['myservice'] = function($container) {
-	return new MyServiceClassName();
-}
-```
-
-Access parameters and services
-------------------------------
-
-```php
-class MyClass
-{
-	function myFunction()
-	{
-		global $container;
-
-		$parameter = $container['myservice.param'];
-		$service = $container['myservice'];
-	}
-}
-```
+Show all services and parameters registered in the dependency injection container.

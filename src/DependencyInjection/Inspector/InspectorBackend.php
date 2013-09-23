@@ -13,9 +13,9 @@
  * @filesource
  */
 
-namespace DependencyInjection;
+namespace DependencyInjection\Inspector;
 
-class ServicesBackend extends \TwigBackendModule
+class InspectorBackend extends \TwigBackendModule
 {
 	protected $strTemplate = 'be_services';
 
@@ -26,7 +26,7 @@ class ServicesBackend extends \TwigBackendModule
 	{
 		$this->loadLanguageFile('dependency-container');
 
-		/** @var \DependencyInjection\Container $container */
+		/** @var \Pimple $container */
 		global $container;
 
 		$services = array();
